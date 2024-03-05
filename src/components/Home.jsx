@@ -5,6 +5,7 @@ import axios from '../components/utils/axios'
 import Header from './temps/Header'
 import TrendingCards from './temps/TrendingCards'
 import Dropdown from './temps/Dropdown'
+import Loading from './temps/Loading'
 
 const Home = () => {
   document.title = "Home";
@@ -52,7 +53,7 @@ const Home = () => {
   return wallpaper ? (
     <>
       <SideNav />
-      <div className='w-[80%] h-full overflow-auto overflow-x-hidden '>
+      <div className='w-full h-full overflow-auto overflow-x-hidden bg-rose-200 '>
         <TopNav />
         <Header data={wallpaper} />
         <div className='p-5 flex justify-between'>
@@ -64,7 +65,7 @@ const Home = () => {
         <TrendingCards data={trendings} />
       </div>
     </>
-  ) : (<h1>loading</h1>);
+  ) : (<Loading/>);
 }
 
 export default Home
