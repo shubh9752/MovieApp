@@ -52,7 +52,7 @@ const Popular = () => {
       <div className='w-full flex items-center'>
         <i onClick={() => navigate(-1)} className="hover:text-[#6556CD] ri-arrow-go-back-line text-xl text-zink-700 text-bolder"></i>
         <h1 className='text-2xl text-zinc-400 font-semibold w-[20%] ml-4'> popular</h1>
-        <div className='w-[70%] flex items-center gap-x-8'>
+        <div className='w-[90%] flex items-center gap-x-8'>
           <TopNav className="ml-[15%]"/>
           <Dropdown title="select category" options={["all", "movie", "tv"]} setCategory={(e) => setCategory(e.target.value)}/>
          
